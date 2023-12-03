@@ -17,7 +17,8 @@ while True:
 
 url = (f"https://api.apilayer.com/fixer/convert?to="
        f"{target_currency}"
-       f"&from={init_currency}&amount={amount}")
+       f"&from={init_currency}&amount={amount}"
+       )
 
 payload = {}
 
