@@ -63,8 +63,8 @@ def get_location_weather():
             #throw collected weather data to it's labels
             temperature_label.config(text=f"Temperature: {temp}°C")
             humidity_label.config(text=f"Humidity: {humidity}%")
-            wind_speed_label.config(text=f"Wind Speed: {wind_speed} m/s")
-            pressure_label.config(text=f"Pressure: {pressure} hPa")
+            wind_speed_label.config(text=f"Wind Speed: {wind_speed}Km/s")
+            pressure_label.config(text=f"Pressure: {pressure}hPa")
 
     validate_input()
 
