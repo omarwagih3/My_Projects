@@ -1,0 +1,113 @@
+@media (max-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    row-gap: 8rem;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+  }
+
+  .bio__pic-content {
+    grid-row: 1;
+    justify-self: center;
+    margin-bottom: 4rem;
+  }
+
+  .skills__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects__content {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+    justify-items: center;
+  }
+
+  .projects__info:nth-of-type(2) {
+    order: 1;
+  }
+
+  .about__paragraph {
+    font-size: var(--font-size-24);
+  }
+
+  .contact {
+    row-gap: 6rem;
+  }
+
+  .contact__formContent {
+    order: -1;
+  }
+}
+
+@media (max-width: 500px) {
+  .bio__pic {
+    width: 100%;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.75rem;
+  }
+
+  .burger-menu__bar {
+    position: relative;
+    height: 0.3rem;
+    width: 4.375rem;
+    background-color: var(--color-text);
+    transition: var(--transition-timing);
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(2) {
+    transform: translateX(-55px);
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(1) {
+    transform: translateY(10px) rotate(40deg);
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-40deg);
+  }
+
+  .navigation {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    transition: var(--transition-timing);
+    top: 0;
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .navigation {
+    opacity: 100%;
+    visibility: visible;
+    transform: translateY(8.4rem);
+    width: 100vw;
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .navigation__list {
+    justify-content: center;
+    margin-top: 3.36rem;
+    gap: 3.5rem;
+    transition: var(--transition-timing);
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .navigation::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-background);
+    height: 8rem;
+    width: 100vw;
+    border-bottom: 0.1rem solid var(--color-input-border);
+    top: 0;
+    z-index: -1;
+  }
+}

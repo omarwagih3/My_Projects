@@ -1,0 +1,17 @@
+.about__paragraphs {
+  grid-column: 1/-1;
+  font-size: 35px;
+  line-height: 1.7;
+}
+
+.about__paragraphs-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.about__paragraph {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}

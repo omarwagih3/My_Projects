@@ -1,0 +1,31 @@
+.skills {
+  grid-template-columns: 1fr;
+}
+
+.skills__components {
+  transition: var(--transition-timing);
+  user-select: none;
+}
+
+.skills__list-elements {
+  font-size: var(--font-size-38);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 5rem;
+}
+
+.skills__experience {
+  display: inline-block;
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-regular);
+  margin-inline-start: 0.5rem;
+  margin-top: 1rem;
+}
+
+.skills__components:hover {
+  text-shadow: 0 0 2px var(--color-green);
+}
