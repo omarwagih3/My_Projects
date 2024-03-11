@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import font as tkFont
 import random
-
+ 
 #d13913 red
 #59b3df blue
 def my_first_check_version():
