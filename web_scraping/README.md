@@ -1,4 +1,4 @@
-#  Web Scraping Project
+#  Web Scraping 
 
 ## Description
 The Book Scraping project allows users to scrape book information from a website. It retrieves book titles, ratings, and prices from the "Books to Scrape" website and displays them to the user.
