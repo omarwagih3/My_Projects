@@ -1,4 +1,4 @@
-# Beta Text Editor
+# Text Editor
 
 ## Description
 The Beta Text Editor is a simple text editor built using Tkinter, a Python GUI library. This text editor allows users to open, edit, and save text files in a user-friendly interface.
