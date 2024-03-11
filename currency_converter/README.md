@@ -15,11 +15,11 @@ This script allows you to convert currencies using the Fixer API.
 
 ## Installation
 1. Clone this repository.
-2. Install the requests library if you haven't already:
+2. Install the requests library if you haven't already: pip install requests
 
 ## Usage
 1. Navigate to the directory where the script is located.
-2. Run the script using Python:
+2. Run the script using Python: python currency_converter.py
 
 ## Example
 - Enter initial currency: USD
