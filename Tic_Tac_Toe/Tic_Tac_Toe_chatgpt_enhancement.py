@@ -1,6 +1,6 @@
 import tkinter as tk  # Import the tkinter module for GUI
 import random  # Import the random module for computer moves
-
+  
 class TicTacToe:
     def __init__(self, root):
         self.root = root  # Initialize the main window
