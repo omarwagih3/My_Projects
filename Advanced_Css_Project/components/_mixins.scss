@@ -1,5 +1,0 @@
-@mixin sections($column-gap: 0, $row-gap: 0) {
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: $column-gap;
-  row-gap: $row-gap;
-}
