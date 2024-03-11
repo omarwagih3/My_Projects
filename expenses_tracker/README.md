@@ -1,41 +1,42 @@
 # Expenses Tracker
 
 ## Description
-The Expenses Tracker is a Python application built using Tkinter that allows users to track their expenses. Users can input the amount, currency, category, and payment method for each expense, and the application calculates the total expenses in USD based on the provided currency rates.
+The Expenses Tracker project allows users to track their expenses by adding details such as amount, currency, category, and payment method. It calculates the total expenses in USD based on the entered currency using a currency converter API.
 
 ## Features
-- Track expenses with amount, currency, category, and payment method.
-- Dynamically calculates total expenses in USD using the Fixer API.
-- User-friendly interface built with Tkinter.
+- Allows users to enter expenses with details like amount, currency, category, and payment method.
+- Converts entered currencies into USD using a currency converter API.
+- Displays the total expenses in USD in a table format.
+- Supports different currencies, categories, and payment methods.
 
 ## Requirements
 - Python 3.x
-- Tkinter library
-- requests library
+- `tkinter` library
+- `requests` library
+- `beautifulsoup4` library (for parsing HTML content if necessary)
+- Internet connection for currency conversion API
 
-## Installation
-1. Clone this repository.
-2. Install the requests library if you haven't already: pip install requests
+## How to Use
+1. Run the script `expenses_tracker.py`.
+2. Enter the amount, select the currency, category, and payment method.
+3. Click on the "Add Expenses" button to add the expense to the table.
+4. The script converts the entered currency amount into USD and calculates the total expenses.
+5. The total expenses are displayed in the table along with other expense details.
+6. Exit the program when done.
 
+## Implementation Details
+- The script uses the `tkinter` library for creating a graphical user interface (GUI).
+- Users can input the amount, select the currency, category, and payment method using entry fields and comboboxes.
+- Currency conversion is done using the Fixer API to convert the entered currency into USD.
+- The total expenses are calculated and displayed in the table along with individual expense details.
+- The script handles exceptions for invalid input and failed API requests.
 
-## Usage
-1. Navigate to the directory where the script is located.
-2. Run the script using Python: python expenses_tracker.py
-
-
-## Example
-- Enter the amount, select the currency, choose the category, and pick the payment method.
-- Click the "Add Expenses" button to record the expense.
-- The total expenses will be displayed in the table below, converted to USD.
-
-## API Key
-Make sure to replace the API key used in the script with your own if you have one.
-
-## Notes
-- Ensure that you have an active internet connection to use the currency conversion feature.
-- The application supports various currencies and categories for expenses.
+## What I've Learned
+- Creating GUI applications using the `tkinter` library in Python.
+- Handling user input and validating data entered in entry fields and comboboxes.
+- Making HTTP requests to external APIs using the `requests` library.
+- Parsing JSON responses from APIs and extracting relevant data.
+- Displaying data in a table format using the `tkinter` `Treeview` widget.
 
 ## Author
-[Omar Wagih]
-
-
+[Omaar Wagih]
