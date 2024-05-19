@@ -182,239 +182,266 @@ def score_updating():
         computer_label.config(text =f"Computer : {no_o_win}")
 
 def click_btn_1():
-    #Changing appearance of clicked button
-    btn_1.config(text = "X" ,fg = "black" ,bg = "#59b3df")
-    buttons.remove(btn_1)
-
-    #Update buttons_backup to reflect the current state
-    buttons_backup[0]["text"] = "X"
-
-    #Call the win and tie checking function
-    check_win_lose_tie()
-
-    #computer choosing      #We can make it a function and call it within each 
-    if buttons:                 # Check that the list in not empty
-        random_btn = random.choice(buttons)
-        random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
-        buttons.remove(random_btn)
+    if buttons_backup[0]["text"] == "":
+        #Changing appearance of clicked button
+        btn_1.config(text = "X" ,fg = "black" ,bg = "#59b3df")
+        buttons.remove(btn_1)
 
         #Update buttons_backup to reflect the current state
-        index = buttons_backup.index(random_btn)
-        buttons_backup[index]["text"] = "O"
+        buttons_backup[0]["text"] = "X"
 
         #Call the win and tie checking function
         check_win_lose_tie()
 
+        #computer choosing      #We can make it a function and call it within each 
+        if buttons:                 # Check that the list is not empty
+            random_btn = random.choice(buttons)
+            random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
+            buttons.remove(random_btn)
+
+            #Update buttons_backup to reflect the current state
+            index = buttons_backup.index(random_btn)
+            buttons_backup[index]["text"] = "O"
+
+            #Call the win and tie checking function
+            check_win_lose_tie()
+
         #update score
         score_updating()
+        print(f"buttons list: {len(buttons)}")
+        print(f"buttons_backup list: {len(buttons_backup)}")
 def click_btn_2():
-    #Changing appearance of clicked button
-    btn_2.config(text = "X" ,fg = "black" ,bg = "#59b3df")
-    buttons.remove(btn_2)
-
-    #Update buttons_backup to reflect the current state
-    buttons_backup[1]["text"] = "X"
-
-    #Call the win and tie checking function
-    check_win_lose_tie()
-
-    #computer choosing
-    if buttons:                 # Check that the list in not empty
-        random_btn = random.choice(buttons)
-        random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
-        buttons.remove(random_btn)
+    if buttons_backup[1]["text"] == "":
+        #Changing appearance of clicked button
+        btn_2.config(text = "X" ,fg = "black" ,bg = "#59b3df")
+        buttons.remove(btn_2)
 
         #Update buttons_backup to reflect the current state
-        index = buttons_backup.index(random_btn)
-        buttons_backup[index]["text"] = "O"
+        buttons_backup[1]["text"] = "X"
 
         #Call the win and tie checking function
         check_win_lose_tie()
 
+        #computer choosing
+        if buttons:                 # Check that the list in not empty
+            random_btn = random.choice(buttons)
+            random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
+            buttons.remove(random_btn)
+
+            #Update buttons_backup to reflect the current state
+            index = buttons_backup.index(random_btn)
+            buttons_backup[index]["text"] = "O"
+
+            #Call the win and tie checking function
+            check_win_lose_tie()
+
         #update score
         score_updating()
+        print(f"buttons list: {len(buttons)}")
+        print(f"buttons_backup list: {len(buttons_backup)}")
 def click_btn_3():
-    #Changing appearance of clicked button
-    btn_3.config(text = "X" ,fg = "black" ,bg = "#59b3df")
-    buttons.remove(btn_3)
-
-    #Update buttons_backup to reflect the current state
-    buttons_backup[2]["text"] = "X"
-
-    #Call the win and tie checking function
-    check_win_lose_tie()
-
-    #computer choosing
-    if buttons:                 # Check that the list in not empty
-        random_btn = random.choice(buttons)
-        random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
-        buttons.remove(random_btn)
+    if buttons_backup[2]["text"] == "":
+        #Changing appearance of clicked button
+        btn_3.config(text = "X" ,fg = "black" ,bg = "#59b3df")
+        buttons.remove(btn_3)
 
         #Update buttons_backup to reflect the current state
-        index = buttons_backup.index(random_btn)
-        buttons_backup[index]["text"] = "O"
+        buttons_backup[2]["text"] = "X"
 
         #Call the win and tie checking function
         check_win_lose_tie()
 
+        #computer choosing
+        if buttons:                 # Check that the list in not empty
+            random_btn = random.choice(buttons)
+            random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
+            buttons.remove(random_btn)
+
+            #Update buttons_backup to reflect the current state
+            index = buttons_backup.index(random_btn)
+            buttons_backup[index]["text"] = "O"
+
+            #Call the win and tie checking function
+            check_win_lose_tie()
+
         #update score
         score_updating()
+        print(f"buttons list: {len(buttons)}")
+        print(f"buttons_backup list: {len(buttons_backup)}")
 def click_btn_4():
-    #Changing appearance of clicked button
-    btn_4.config(text = "X" ,fg = "black" ,bg = "#59b3df")
-    buttons.remove(btn_4)
-
-    #Update buttons_backup to reflect the current state
-    buttons_backup[3]["text"] = "X"
-
-    # Call the win and tie checking function
-    check_win_lose_tie()
-
-    #computer choosing
-    if buttons:                 # Check that the list in not empty
-        random_btn = random.choice(buttons)
-        random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
-        buttons.remove(random_btn)
+    if buttons_backup[3]["text"] == "":
+        #Changing appearance of clicked button
+        btn_4.config(text = "X" ,fg = "black" ,bg = "#59b3df")
+        buttons.remove(btn_4)
 
         #Update buttons_backup to reflect the current state
-        index = buttons_backup.index(random_btn)
-        buttons_backup[index]["text"] = "O"
+        buttons_backup[3]["text"] = "X"
 
-        #Call the win and tie checking function
+        # Call the win and tie checking function
         check_win_lose_tie()
+
+        #computer choosing
+        if buttons:                 # Check that the list in not empty
+            random_btn = random.choice(buttons)
+            random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
+            buttons.remove(random_btn)
+
+            #Update buttons_backup to reflect the current state
+            index = buttons_backup.index(random_btn)
+            buttons_backup[index]["text"] = "O"
+
+            #Call the win and tie checking function
+            check_win_lose_tie()
 
         #update score
         score_updating()
+        print(f"buttons list: {len(buttons)}")
+        print(f"buttons_backup list: {len(buttons_backup)}")
 def click_btn_5():
-    #Changing appearance of clicked button
-    btn_5.config(text = "X" ,fg = "black" ,bg = "#59b3df")
-    buttons.remove(btn_5)
-
-    #Update buttons_backup to reflect the current state
-    buttons_backup[4]["text"] = "X"
-
-    # Call the win and tie checking function
-    check_win_lose_tie()
-
-    #computer choosing
-    if buttons:                 # Check that the list in not empty
-        random_btn = random.choice(buttons)
-        random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
-        buttons.remove(random_btn)
+    if buttons_backup[4]["text"] == "":
+        #Changing appearance of clicked button
+        btn_5.config(text = "X" ,fg = "black" ,bg = "#59b3df")
+        buttons.remove(btn_5)
 
         #Update buttons_backup to reflect the current state
-        index = buttons_backup.index(random_btn)
-        buttons_backup[index]["text"] = "O"
+        buttons_backup[4]["text"] = "X"
 
-        #Call the win and tie checking function
+        # Call the win and tie checking function
         check_win_lose_tie()
+
+        #computer choosing
+        if buttons:                 # Check that the list in not empty
+            random_btn = random.choice(buttons)
+            random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
+            buttons.remove(random_btn)
+
+            #Update buttons_backup to reflect the current state
+            index = buttons_backup.index(random_btn)
+            buttons_backup[index]["text"] = "O"
+
+            #Call the win and tie checking function
+            check_win_lose_tie()
 
         #update score
         score_updating()
+        print(f"buttons list: {len(buttons)}")
+        print(f"buttons_backup list: {len(buttons_backup)}")
 def click_btn_6():
-    #Changing appearance of clicked button
-    btn_6.config(text = "X" ,fg = "black" ,bg = "#59b3df")
-    buttons.remove(btn_6)
-
-    #Update buttons_backup to reflect the current state
-    buttons_backup[5]["text"] = "X"
-
-    # Call the win and tie checking function
-    check_win_lose_tie()
-
-    #computer choosing
-    if buttons:                 # Check that the list in not empty
-        random_btn = random.choice(buttons)
-        random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
-        buttons.remove(random_btn)
+    if buttons_backup[5]["text"] == "":
+        #Changing appearance of clicked button
+        btn_6.config(text = "X" ,fg = "black" ,bg = "#59b3df")
+        buttons.remove(btn_6)
 
         #Update buttons_backup to reflect the current state
-        index = buttons_backup.index(random_btn)
-        buttons_backup[index]["text"] = "O"
+        buttons_backup[5]["text"] = "X"
 
-        #Call the win and tie checking function
+        # Call the win and tie checking function
         check_win_lose_tie()
+
+        #computer choosing
+        if buttons:                 # Check that the list in not empty
+            random_btn = random.choice(buttons)
+            random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
+            buttons.remove(random_btn)
+
+            #Update buttons_backup to reflect the current state
+            index = buttons_backup.index(random_btn)
+            buttons_backup[index]["text"] = "O"
+
+            #Call the win and tie checking function
+            check_win_lose_tie()
 
         #update score
         score_updating()
+        print(f"buttons list: {len(buttons)}")
+        print(f"buttons_backup list: {len(buttons_backup)}")
 def click_btn_7():
-    #Changing appearance of clicked button
-    btn_7.config(text = "X" ,fg = "black" ,bg = "#59b3df")
-    buttons.remove(btn_7)
-
-    #Update buttons_backup to reflect the current state
-    buttons_backup[6]["text"] = "X"
-
-    # Call the win and tie checking function
-    check_win_lose_tie()
-
-    #computer choosing
-    if buttons:                 # Check that the list in not empty
-        random_btn = random.choice(buttons)
-        random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
-        buttons.remove(random_btn)
+    if buttons_backup[6]["text"] == "":
+        #Changing appearance of clicked button
+        btn_7.config(text = "X" ,fg = "black" ,bg = "#59b3df")
+        buttons.remove(btn_7)
 
         #Update buttons_backup to reflect the current state
-        index = buttons_backup.index(random_btn)
-        buttons_backup[index]["text"] = "O"
+        buttons_backup[6]["text"] = "X"
 
-        #Call the win and tie checking function
+        # Call the win and tie checking function
         check_win_lose_tie()
+
+        #computer choosing
+        if buttons:                 # Check that the list in not empty
+            random_btn = random.choice(buttons)
+            random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
+            buttons.remove(random_btn)
+
+            #Update buttons_backup to reflect the current state
+            index = buttons_backup.index(random_btn)
+            buttons_backup[index]["text"] = "O"
+
+            #Call the win and tie checking function
+            check_win_lose_tie()
 
         #update score
         score_updating()
+        print(f"buttons list: {len(buttons)}")
+        print(f"buttons_backup list: {len(buttons_backup)}")
 def click_btn_8():
-    #Changing appearance of clicked button
-    btn_8.config(text = "X" ,fg = "black" ,bg = "#59b3df")
-    buttons.remove(btn_8)
-
-    #Update buttons_backup to reflect the current state
-    buttons_backup[7]["text"] = "X"
-
-    # Call the win and tie checking function
-    check_win_lose_tie()
-
-    #computer choosing
-    if buttons:                 # Check that the list in not empty
-        random_btn = random.choice(buttons)
-        random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
-        buttons.remove(random_btn)
+    if buttons_backup[7]["text"] == "":
+        #Changing appearance of clicked button
+        btn_8.config(text = "X" ,fg = "black" ,bg = "#59b3df")
+        buttons.remove(btn_8)
 
         #Update buttons_backup to reflect the current state
-        index = buttons_backup.index(random_btn)
-        buttons_backup[index]["text"] = "O"
+        buttons_backup[7]["text"] = "X"
 
-        #Call the win and tie checking function
+        # Call the win and tie checking function
         check_win_lose_tie()
+
+        #computer choosing
+        if buttons:                 # Check that the list in not empty
+            random_btn = random.choice(buttons)
+            random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
+            buttons.remove(random_btn)
+
+            #Update buttons_backup to reflect the current state
+            index = buttons_backup.index(random_btn)
+            buttons_backup[index]["text"] = "O"
+
+            #Call the win and tie checking function
+            check_win_lose_tie()
 
         #update score
         score_updating()
+        print(f"buttons list: {len(buttons)}")
+        print(f"buttons_backup list: {len(buttons_backup)}")
 def click_btn_9():
-    #Changing appearance of clicked button
-    btn_9.config(text = "X" ,fg = "black" ,bg = "#59b3df")
-    buttons.remove(btn_9)
-
-    #Update buttons_backup to reflect the current state
-    buttons_backup[8]["text"] = "X"
-
-    # Call the win and tie checking function
-    check_win_lose_tie()
-
-    #computer choosing
-    if buttons:                 # Check that the list in not empty
-        random_btn = random.choice(buttons)
-        random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
-        buttons.remove(random_btn)
+    if buttons_backup[8 ]["text"] == "":
+        #Changing appearance of clicked button
+        btn_9.config(text = "X" ,fg = "black" ,bg = "#59b3df")
+        buttons.remove(btn_9)
 
         #Update buttons_backup to reflect the current state
-        index = buttons_backup.index(random_btn)
-        buttons_backup[index]["text"] = "O"
+        buttons_backup[8]["text"] = "X"
 
-        #Call the win and tie checking function
+        # Call the win and tie checking function
         check_win_lose_tie()
+
+        #computer choosing
+        if buttons:                 # Check that the list in not empty
+            random_btn = random.choice(buttons)
+            random_btn.config(text = "O" ,fg = "white" ,bg = "#d13913")
+            buttons.remove(random_btn)
+
+            #Update buttons_backup to reflect the current state
+            index = buttons_backup.index(random_btn)
+            buttons_backup[index]["text"] = "O"
+
+            #Call the win and tie checking function
+            check_win_lose_tie()
 
         #update score
         score_updating()
+        print(f"buttons list: {len(buttons)}")
+        print(f"buttons_backup list: {len(buttons_backup)}")
 
 def click_restart():
     #reset all buttons
@@ -422,11 +449,16 @@ def click_restart():
         button.config(text = "" ,bg = "#353535")
 
     #backup buttons list to start over again
+    buttons.clear()
+    print(f"buttons list: {len(buttons)}")
+    print(f"buttons_backup list: {len(buttons_backup)}")
     for button in buttons_backup:
         buttons.append(button)
 
     #wipe state label
     game_result_label.config(text = "")
+    print(f"buttons list: {len(buttons)}")
+    print(f"buttons_backup list: {len(buttons_backup)}")
 
 
 window = tk.Tk()
